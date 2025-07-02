@@ -1,8 +1,8 @@
 import React from "react";
 
-const PageWrapper = () => (
+const PageWrapper = ({children}) => (
 	<div>
-		Page Wrapper
+		{children}
 	</div>
   );
 
