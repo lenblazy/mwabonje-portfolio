@@ -49,6 +49,10 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 
+body {
+	margin: 0;
+}
+
 /** 
  * ===================================================================
  * 09. header styles
@@ -96,7 +100,7 @@ header .logo a {
 	color: transparent;
 	width: 92px;
 	height: 15px;
-	background: url("../images/bonje.png") no-repeat center;
+	background: url("../img/bonje.png") no-repeat center;
 	background-size: 92px 15px;
 }
 
@@ -197,7 +201,7 @@ header .logo a {
 #main-nav-wrap {
 	display: block;
 	width: 100%;
-	font-family: var(--default-font);
+	font-family: var(--heading-font);
 	font-size: 1.5rem;
 	position: absolute;
 	top: 100%;
@@ -266,10 +270,9 @@ header .logo a {
 	}
 }
 
-
-
 body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
+
