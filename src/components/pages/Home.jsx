@@ -8,7 +8,16 @@ const Home = () => (
 			<img src="assets/img/home-bg.jpg" alt="" data-aos="fade-in" className="" />
 			<div className="container" data-aos="fade-up" data-aos-delay="100">
 				<h2>Lennox Mwabonje</h2>
-				<p>I'm <span className="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+				<p>I'm a <span className="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span>
+					<span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+					<span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+				</p>
+				<div class="social-links">
+					<a href="#"><i class="bi bi-twitter-x"></i></a>
+					<a href="#"><i class="bi bi-facebook"></i></a>
+					<a href="#"><i class="bi bi-instagram"></i></a>
+					<a href="#"><i class="bi bi-linkedin"></i></a>
+				</div>
 			</div>
 
 		</section>
