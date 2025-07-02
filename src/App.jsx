@@ -1,10 +1,11 @@
 import React from 'react';
+import PageWrapper from './components/PageWrapper';
+import Home from './components/pages/Home';
 
 const App = () => (
-	<div>
-	  <h1>Hello, World!</h1>
-	  <p>This is a simple React application.</p>
-	</div>
+	<PageWrapper >
+		<Home />
+	</PageWrapper>
   );
 
 export default App;
