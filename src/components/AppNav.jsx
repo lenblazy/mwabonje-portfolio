@@ -1,28 +1,57 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from 'react';
 
-const AppNav = () => (
-	<div>
-		<header>
-			<div class="row">
+const AppNav = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
+	const navRef = useRef(null);
 
-				<div class="top-bar">
-					<a class="menu-toggle" href="#"><span>Menu</span></a>
+	const handleToggleClick = (e) => {
+		e.preventDefault();
+		setMenuOpen((prev) => !prev);
+	};
 
-					<div class="logo">
-						<a href="index.html">Lennox Mwabonje</a>
+	useEffect(() => {
+		const handleKeyDown = (e) => {
+			if (e.key === 'Escape') {
+				setMenuOpen(false);
+			}
+		};
+		document.addEventListener('keydown', handleKeyDown);
+		return () => document.removeEventListener('keydown', handleKeyDown);
+	}, []);
+
+	return (
+		<div>
+			<header>
+				<div className="row">
+
+					<div className="top-bar">
+						<a
+							href="#"
+							className={`menu-toggle ${menuOpen ? 'is-clicked' : ''}`}
+							onClick={handleToggleClick}
+						>
+							<span>Menu</span>
+						</a>
+
+						<div className="logo">
+							<a href="index.html">Lennox Mwabonje</a>
+						</div>
+
+						<nav id="main-nav-wrap">
+							<ul
+								className="main-navigation"
+								style={{ display: menuOpen ? 'block' : 'none' }}
+							>
+								<li className="current"><a className="smoothscroll" href="#intro" title="">Home</a></li>
+								<li><a className="smoothscroll" href="#about" title="">About</a></li>
+							</ul>
+						</nav>
 					</div>
 
-					<nav id="main-nav-wrap">
-						<ul class="main-navigation">
-							<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
-							<li><a class="smoothscroll" href="#about" title="">About</a></li>
-						</ul>
-					</nav>
 				</div>
-
-			</div>
-		</header>
-	</div>
-)
+			</header>
+		</div>
+	);
+}
 
 export default AppNav;
