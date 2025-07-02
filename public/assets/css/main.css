@@ -17,7 +17,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #45505b;  /* The default color of the main navmenu links */
+  --nav-color: #000000;  /* The default color of the main navmenu links */
   --nav-hover-color: #000957; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -61,17 +61,39 @@ body {
  */
 
 header {
+    position: fixed;
+    width: 100%;
+    min-height: 66px;
+    z-index: 600; 
+    display: block;
+}
+
+header .row {
+    position: relative;
+    min-height: 66px;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+/** 
+ * ===================================================================
+ * 09. header styles - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+header {
 	position: fixed;
 	width: 100%;
 	min-height: 66px;
 	z-index: 600;
 }
-
 header .row {
 	position: relative;
 	min-height: 66px;
 }
-
 header .top-bar {
 	display: block;
 	background: var(--primary-color);
@@ -81,7 +103,6 @@ header .top-bar {
 	left: 90px;
 	top: 0;
 }
-
 header .logo {
 	float: left;
 	margin-left: 20px;
@@ -89,7 +110,6 @@ header .logo {
 	margin-top: 25px;
 	position: relative;
 }
-
 header .logo a {
 	display: block;
 	margin: 0;
@@ -197,15 +217,56 @@ header .logo a {
 	transform: rotate(-45deg);
 }
 
+/**
+ * links - (_document-setup.scss)
+ * -------------------------------------------------------------------
+ */
+a, a:visited {
+	color: var(--nav-color);
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus, a:active {
+	color: var(--accent-color);
+	outline: 0;
+}
+/**
+ * links - (_basic.scss)
+ * ------------------------------------------------------------------- 
+ */
+a {
+	text-decoration: none;
+	line-height: inherit;
+}
+
+a img {
+	border: none;
+}
+a {
+	background: transparent;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 /* navigation panel */
 #main-nav-wrap {
 	display: block;
 	width: 100%;
-	font-family: var(--heading-font);
-	font-size: 1.5rem;
+	font-family: var(--nav-font);
 	position: absolute;
 	top: 100%;
 	left: 0;
+}
+
+nav {
+  display: block;
 }
 
 /* dropdown nav */
@@ -213,28 +274,24 @@ header .logo a {
 	background: var(--primary-color);
 	padding: 24px 30px 42px;
 	margin: 0;
-	width: 100%;
 	height: auto;
 	clear: both;
-	display: inline-block;
+  display: none;
 }
-
 .main-navigation > li {
 	display: block;
 	height: auto;
 	text-align: left;
 	padding: 0;
 }
-
 .main-navigation li a {
 	display: block;
-	color: #FFFFFF;
+	color: var(--nav-color);
 	width: auto;
 	padding: 15px 0;
 	line-height: 16px;
 	border: none;
 }
-
 .main-navigation li a:hover {
 	color: var(--accent-color);
 	padding-left: 1rem;
@@ -244,35 +301,28 @@ header .logo a {
 	color: var(--accent-color);
 }
 
-/**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
- */
-@media only screen and (max-width:1024px) {
-	header .top-bar {
-		left: 60px;
-	}
-}
-@media only screen and (max-width:768px) {
-	header .top-bar {
-		left: 50px;
-	}
-}
-@media only screen and (max-width:600px) {
-	header .top-bar {
-		left: 35px;
-	}
-}
-@media only screen and (max-width:400px) {
-	header .top-bar {
-		left: 25px;
-	}
+ul {
+	margin-bottom: 3rem;
 }
 
-body {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
+ul {
+    margin-left: 1.7rem;
 }
 
+ul {
+	list-style: none;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+	padding-left: .4rem;
+}
+
+li {
+	display: list-item;
+  /* block; */
+}
