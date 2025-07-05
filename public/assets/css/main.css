@@ -62,7 +62,6 @@ body {
 
 header {
     position: fixed;
-    width: 100%;
     min-height: 66px;
     z-index: 600; 
     display: block;
@@ -86,7 +85,6 @@ div {
  */
 header {
 	position: fixed;
-	width: 100%;
 	min-height: 66px;
 	z-index: 600;
 }
@@ -105,10 +103,10 @@ header .top-bar {
 }
 header .logo {
 	float: left;
-	margin-left: 20px;
+	margin-left: 80px;
 	margin-right: 50px;
 	margin-top: 25px;
-	position: relative;
+	position: inherit;
 }
 header .logo a {
 	display: block;
