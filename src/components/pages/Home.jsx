@@ -10,11 +10,11 @@ const Home = () => (
 				<span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
 				<span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
 			</p>
-			<div class="social-links">
-				<a href="#"><i class="bi bi-twitter-x"></i></a>
-				<a href="#"><i class="bi bi-facebook"></i></a>
-				<a href="#"><i class="bi bi-instagram"></i></a>
-				<a href="#"><i class="bi bi-linkedin"></i></a>
+			<div className="social-links">
+				<a href="#"><i className="bi bi-twitter-x"></i></a>
+				<a href="#"><i className="bi bi-facebook"></i></a>
+				<a href="#"><i className="bi bi-instagram"></i></a>
+				<a href="#"><i className="bi bi-linkedin"></i></a>
 			</div>
 		</div>
 

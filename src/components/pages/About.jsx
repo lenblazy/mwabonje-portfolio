@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => (
 	
-	<section id="about" class="about section">
+	<section id="about" className="about section">
 
 		<div className="container section-title" data-aos="fade-up">
 			<h2>About</h2>
@@ -16,7 +16,7 @@ const About = () => (
 					<img src="assets/img/profile-img.jpeg" className="img-fluid" alt="" /> 
 				</div>
 				<div className="col-lg-8 content">
-					<h2>UI/UX Designer &amp; Web Developer.</h2>
+					<h2>Full-Stack Software Engineer</h2>
 					<p className="fst-italic py-3">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 						magna aliqua.
@@ -24,17 +24,17 @@ const About = () => (
 					<div className="row">
 						<div className="col-lg-6">
 							<ul>
-								<li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+								<li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>21 Dec 1995</span></li>
 								<li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-								<li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-								<li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+								<li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 727 253211</span></li>
+								<li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nairobi, Kenya</span></li>
 							</ul>
 						</div>
-						<div class="col-lg-6">
+						<div className="col-lg-6">
 							<ul>
-								<li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-								<li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-								<li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
+								<li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>29</span></li>
+								<li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate</span></li>
+								<li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>lenibonje@gmail.com</span></li>
 								<li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
 							</ul>
 						</div>
