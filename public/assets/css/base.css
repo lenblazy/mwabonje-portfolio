@@ -184,3 +184,83 @@
 		left: 25px;
 	}
 }
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+button.stroke, .button.stroke {
+    background: transparent !important;
+    border: 3px solid #313131;
+    line-height: 4.8rem;
+}
+
+.button-section .button {
+    width: 250px;
+}
+
+.button, a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    display: inline-block;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    height: 5.4rem;
+    line-height: 5.4rem;
+    padding: 0 3rem;
+    margin: 0 .3rem 1.2rem 0;
+    background: #d8d8d8;
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button.stroke, .button.stroke {
+    background: transparent !important;
+    border: 3px solid #313131;
+    line-height: 4.8rem;
+}
+
+.button.button-primary, 
+a.button.button-primary, 
+button.button-primary, 
+input[type="submit"].button-primary, 
+input[type="reset"].button-primary, 
+input[type="button"].button-primary {
+    background: #313131;
+    color: #FFFFFF;
+}
+
+.button, a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    display: inline-block;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    height: 5.4rem;
+    line-height: 5.4rem;
+    padding: 0 3rem;
+    margin: 0 .3rem 1.2rem 0;
+    background: #d8d8d8;
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}

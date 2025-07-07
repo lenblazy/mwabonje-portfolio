@@ -1,40 +1,40 @@
 import React from "react";
 
 const Stats = () => (
-	<section id="stats" class="stats section">
+	<section id="stats" className="stats section">
 
-		<div class="container" data-aos="fade-up" data-aos-delay="100">
+		<div className="container" data-aos="fade-up" data-aos-delay="100">
 
-			<div class="row gy-4">
+			<div className="row gy-4">
 
-				<div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-					<i class="bi bi-emoji-smile"></i>
-					<div class="stats-item">
-						<span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+				<div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+					<i className="bi bi-emoji-smile"></i>
+					<div className="stats-item">
+						<span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" className="purecounter"></span>
 						<p>Happy Clients</p>
 					</div>
 				</div>
 
-				<div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-					<i class="bi bi-journal-richtext"></i>
-					<div class="stats-item">
-						<span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+				<div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+					<i className="bi bi-journal-richtext"></i>
+					<div className="stats-item">
+						<span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" className="purecounter"></span>
 						<p>Projects</p>
 					</div>
 				</div>
 
-				<div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-					<i class="bi bi-headset"></i>
-					<div class="stats-item">
-						<span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+				<div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+					<i className="bi bi-headset"></i>
+					<div className="stats-item">
+						<span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" className="purecounter"></span>
 						<p>Hours Of Support</p>
 					</div>
 				</div>
 
-				<div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-					<i class="bi bi-people"></i>
-					<div class="stats-item">
-						<span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+				<div className="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+					<i className="bi bi-people"></i>
+					<div className="stats-item">
+						<span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" className="purecounter"></span>
 						<p>Hard Workers</p>
 					</div>
 				</div>

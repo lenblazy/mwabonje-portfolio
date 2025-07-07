@@ -66,6 +66,13 @@ const Skills = () => (
 
 		</div>
 
+		<div className="row button-section">
+			<div className="col-twelve">
+				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+				<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+			</div>
+		</div>
+
 	</section>
 );
 
