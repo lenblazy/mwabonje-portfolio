@@ -13,7 +13,7 @@ const About = () => (
 
 			<div className="row gy-4 justify-content-center">
 				<div className="col-lg-4">
-					<img src="assets/img/profile-img.jpg" className="img-fluid" alt=""> </img>
+					<img src="assets/img/profile-img.jpeg" className="img-fluid" alt="" /> 
 				</div>
 				<div className="col-lg-8 content">
 					<h2>UI/UX Designer &amp; Web Developer.</h2>

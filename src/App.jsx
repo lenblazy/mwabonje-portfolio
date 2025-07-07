@@ -3,9 +3,7 @@ import PageWrapper from './components/PageWrapper';
 import Home from './components/pages/Home';
 
 const App = () => (
-	<PageWrapper >
-		<Home />
-	</PageWrapper>
+	<PageWrapper />
   );
 
 export default App;
