@@ -35,10 +35,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated initial project bootstrap to start from scratch
 
-[unreleased]: https://github.com/lenblazy/mwabonje-portfolio/compare/v0.2.0...HEAD
+[unreleased]: https://github.com/lenblazy/mwabonje-portfolio/compare/develop...release/0.2.0
 
-[0.2.0]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/0.2.0
+[0.2.0]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/v0.2.0
 
-[0.1.0]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/0.1.0
+[0.1.0]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/v0.1.0
 
-[0.0.1]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/0.0.1
+[0.0.1]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/v0.0.1
