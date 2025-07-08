@@ -1,17 +1,8 @@
 import React from "react";
-import AppNav from "./AppNav";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Stats from "./pages/Stats";
-import Skills from "./pages/Skills";
 
-const PageWrapper = () => (
+const PageWrapper = ({children}) => (
 	<div>
-		<AppNav />
-		<Home />
-		<About />
-		<Stats />
-		<Skills />
+		{children}
 	</div>
 );
 

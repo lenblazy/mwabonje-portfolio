@@ -47,7 +47,7 @@ const Skills = () => (
 					</div>
 
 					<div className="progress">
-						<span className="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
+						<span className="skill"><span>WordPress/CMS</span> <i className="val">90%</i></span>
 						<div className="progress-bar-wrap">
 							<div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
@@ -68,8 +68,8 @@ const Skills = () => (
 
 		<div className="row button-section">
 			<div className="col-twelve">
-				<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-				<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+				<a href="#contact" title="Hire Me" className="button stroke smoothscroll">Hire Me</a>
+				<a href="#" title="Download CV" className="button button-primary">Download CV</a>
 			</div>
 		</div>
 
