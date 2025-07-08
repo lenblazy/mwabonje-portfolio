@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Stats from "./pages/Stats";
 import Skills from "./pages/Skills";
+import Resume from "./pages/Resume";
 
 const PageWrapper = () => (
 	<div>
@@ -12,6 +13,7 @@ const PageWrapper = () => (
 		<About />
 		<Stats />
 		<Skills />
+		<Resume />
 	</div>
 );
 
