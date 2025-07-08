@@ -264,3 +264,21 @@ input[type="button"].button-primary {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+body, input, button {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
+}
+
+.col-twelve, .col-full {
+    width: 100%;
+}
