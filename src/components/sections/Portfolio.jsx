@@ -53,11 +53,11 @@ const Portfolio = () => (
             </div>
 
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" className="img-fluid" alt="" />
+              <img src="assets/img/portfolio/books-1.jpg" className="img-fluid" alt="" />
               <div className="portfolio-info">
                 <h4>App 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
+                <a href="assets/img/portfolio/books-1.jpg" title="App 2" data-gallery="portfolio-gallery-app" className="glightbox preview-link"><i className="bi bi-zoom-in"></i></a>
                 <Link to="/portfolio" title="More Details" className="details-link"><i className="bi bi-link-45deg"></i></Link>
               </div>
             </div>
