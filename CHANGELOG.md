@@ -7,7 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.2.0] - 2025-06-07
+## [0.3.0] - 2025-07-08
+
+### Added
+
+- Added Resume section
+- Added Portfolio details page
+- Added Portfolio section
+- Added CSS styles for portfolio details page
+- Added Services section
+- Added Servide Details page
+
+### Changed
+
+- Splitted code to pages and sections
+
+
+## [0.2.0] - 2025-07-07
 
 ### Added
 
@@ -15,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added CSS files for About Section
 - Imported About page template code
 
-## [0.1.0] - 2025-06-06
+## [0.1.0] - 2025-07-06
 
 ### Added
 
@@ -35,7 +51,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated initial project bootstrap to start from scratch
 
-[unreleased]: https://github.com/lenblazy/mwabonje-portfolio/compare/release/0.2.0...develop
+[unreleased]: https://github.com/lenblazy/mwabonje-portfolio/compare/release/0.3.0...develop
+
+[0.3.0]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/v0.3.0
 
 [0.2.0]: https://github.com/lenblazy/mwabonje-portfolio/releases/tag/v0.2.0
 
