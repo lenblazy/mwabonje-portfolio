@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const AppNav = () => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleToggleClick = (e) => {
@@ -59,4 +59,4 @@ const AppNav = () => {
   );
 };
 
-export default AppNav;
+export default Header;
