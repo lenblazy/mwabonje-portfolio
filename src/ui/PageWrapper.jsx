@@ -1,5 +1,3 @@
-import React from "react";
-
-const PageWrapper = ({ children }) => <div>{children}</div>;
+const PageWrapper = ({ children }) => <>{children}</>;
 
 export default PageWrapper;
