@@ -1,5 +1,6 @@
 import heroBgImg from "../../../assets/img/home-bg.jpg";
 import "./styles.css";
+import { socialLinks } from "../../../data/data";
 
 const Hero = () => (
   <section id="hero" className="hero section dark-background">
@@ -24,18 +25,14 @@ const Hero = () => (
         ></span>
       </p>
       <div className="social-links">
-        <a href="#">
-          <i className="bi bi-twitter-x"></i>
-        </a>
-        <a href="#">
-          <i className="bi bi-facebook"></i>
-        </a>
-        <a href="#">
-          <i className="bi bi-instagram"></i>
-        </a>
-        <a href="#">
-          <i className="bi bi-linkedin"></i>
-        </a>
+        {socialLinks.map((link) => {
+          const { id, linkTo, image } = link;
+          return (
+            <a href={linkTo} key={id}>
+              <i className={`bi bi-${image}`}></i>
+            </a>
+          );
+        })}
       </div>
     </div>
   </section>
