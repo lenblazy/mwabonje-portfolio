@@ -4,7 +4,7 @@ import About from "../sections/about/About";
 // import Stats from "../sections/Stats";
 import Skills from "../sections/skills/Skills";
 import Resume from "../sections/resume/Resume";
-import Portfolio from "../sections/Portfolio";
+import Portfolio from "../sections/portfolio/Portfolio";
 import Testimonials from "../sections/Testimonials";
 import Services from "../sections/Services";
 import Blog from "../sections/blog/Blog";

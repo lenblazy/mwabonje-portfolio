@@ -1,3 +1,8 @@
+import { NavLink } from "react-router";
+import imgApp1 from "../assets/img/portfolio/app-1.jpg";
+import imgApp2 from "../assets/img/portfolio/app-2.jpg";
+import imgApp3 from "../assets/img/portfolio/app-3.jpg";
+
 export const socialLinks = [
   {
     id: "twitter",
@@ -81,5 +86,29 @@ export const sectionLinks = [
     className: "",
     linkTo: "#contact",
     title: "Contact",
+  },
+];
+
+export const portfolioItems = [
+  {
+    id: "app-1",
+    image: imgApp1,
+    title: "App 1",
+    description: "Lorem ipsum, dolor sit",
+    filter: "app",
+  },
+  {
+    id: "product-1",
+    image: imgApp2,
+    title: "Product 1",
+    description: "Lorem ipsum, dolor sit",
+    filter: "product",
+  },
+  {
+    id: "brand-1",
+    image: imgApp3,
+    title: "Product 1",
+    description: "Lorem ipsum, dolor sit",
+    filter: "branding",
   },
 ];
