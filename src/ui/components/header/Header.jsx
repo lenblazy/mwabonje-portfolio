@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { sectionLinks } from "../../../data/data.jsx";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,16 +40,14 @@ const Header = () => {
               className="main-navigation"
               style={{ display: menuOpen ? "block" : "none" }}
             >
-              <li className="current">
-                <a className="smoothscroll" href="#intro" title="">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#about" title="">
-                  About
-                </a>
-              </li>
+              {sectionLinks.map((link) => {
+                const { id, className, linkTo, title } = link;
+                return (
+                  <li key={id} className={className}>
+                    <a href={linkTo}>{title}</a>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>

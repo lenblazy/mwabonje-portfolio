@@ -3,7 +3,7 @@ import "./styles.css";
 import { socialLinks } from "../../../data/data";
 
 const Hero = () => (
-  <section id="hero" className="hero section dark-background">
+  <section id="home" className="hero section dark-background">
     <img src={heroBgImg} alt="Lennox" data-aos="fade-in" />
     <div className="container" data-aos="fade-up" data-aos-delay="100">
       <h2>Lennox Mwabonje</h2>
