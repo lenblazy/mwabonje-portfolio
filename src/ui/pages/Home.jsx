@@ -1,8 +1,8 @@
 import Header from "../components/header/Header";
 import Hero from "../sections/hero/Hero";
 import About from "../sections/about/About";
-import Stats from "../sections/Stats";
-import Skills from "../sections/Skills";
+// import Stats from "../sections/Stats";
+import Skills from "../sections/skills/Skills";
 import Resume from "../sections/Resume";
 import Portfolio from "../sections/Portfolio";
 import Testimonials from "../sections/Testimonials";
@@ -16,7 +16,7 @@ const Home = () => (
     <Header />
     <Hero />
     <About />
-    <Stats />
+    {/* <Stats /> */}
     <Skills />
     <Resume />
     <Portfolio />
