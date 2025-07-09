@@ -1,6 +1,6 @@
 import Header from "../components/header/Header";
 import Hero from "../sections/hero/Hero";
-import About from "../sections/About";
+import About from "../sections/about/About";
 import Stats from "../sections/Stats";
 import Skills from "../sections/Skills";
 import Resume from "../sections/Resume";
