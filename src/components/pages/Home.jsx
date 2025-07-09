@@ -8,19 +8,21 @@ import Resume from "../sections/Resume";
 import Portfolio from "../sections/Portfolio";
 import Testimonials from "../sections/Testimonials";
 import Services from "../sections/Services";
+import Blog from "../sections/blog/Blog";
 
 const Home = () => (
-	<div>
-		<AppNav />
-		<Intro />
-		<About />
-		<Stats />
-		<Skills />
-		<Resume />
-		<Portfolio />
-		<Testimonials />
-		<Services />
-	</div>
+  <div>
+    <AppNav />
+    <Intro />
+    <About />
+    <Stats />
+    <Skills />
+    <Resume />
+    <Portfolio />
+    <Testimonials />
+    <Services />
+    <Blog />
+  </div>
 );
 
 export default Home;
