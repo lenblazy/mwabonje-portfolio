@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { sectionLinks } from "../../../data/data.jsx";
+import "./styles.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,6 +8,10 @@ const Header = () => {
   const handleToggleClick = (e) => {
     e.preventDefault();
     setMenuOpen((prev) => !prev);
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -21,36 +26,36 @@ const Header = () => {
 
   return (
     <header>
-      <div className="row">
-        <div className="top-bar">
-          <a
-            href="#"
-            className={`menu-toggle ${menuOpen ? "is-clicked" : ""}`}
-            onClick={handleToggleClick}
-          >
-            <span>Menu</span>
-          </a>
+      <div className="top-bar">
+        <a
+          href="#"
+          className={`menu-toggle ${menuOpen ? "is-clicked" : ""}`}
+          onClick={handleToggleClick}
+        >
+          <span>Menu</span>
+        </a>
 
-          <div className="logo">
-            <a href="index.html">Lennox Mwabonje</a>
-          </div>
-
-          <nav id="main-nav-wrap">
-            <ul
-              className="main-navigation"
-              style={{ display: menuOpen ? "block" : "none" }}
-            >
-              {sectionLinks.map((link) => {
-                const { id, className, linkTo, title } = link;
-                return (
-                  <li key={id} className={className}>
-                    <a href={linkTo}>{title}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+        <div className="logo">
+          <a href="#">Lennox Mwabonje</a>
         </div>
+
+        <nav id="main-nav-wrap">
+          <ul
+            className="main-navigation"
+            style={{ display: menuOpen ? "block" : "none" }}
+          >
+            {sectionLinks.map((link) => {
+              const { id, className, linkTo, title } = link;
+              return (
+                <li key={id} className={className}>
+                  <a href={linkTo} onClick={handleLinkClick}>
+                    {title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
     </header>
   );

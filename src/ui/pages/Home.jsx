@@ -11,7 +11,7 @@ import Contact from "../sections/contact/Contact";
 import Footer from "../components/footer/Footer";
 
 const Home = () => (
-  <div>
+  <>
     <Header />
     <Hero />
     <About />
@@ -23,7 +23,7 @@ const Home = () => (
     <Blog />
     <Contact />
     <Footer />
-  </div>
+  </>
 );
 
 export default Home;
