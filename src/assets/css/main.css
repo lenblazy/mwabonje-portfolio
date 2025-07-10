@@ -1,0 +1,933 @@
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #272829;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #45505b;
+  /* Color for headings, subheadings and title throughout the website */
+  --primary-color: #344cb7;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #ebe645;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #000000;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #000957;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #000957;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+/** 
+ * ===================================================================
+ * 09. header styles - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+header {
+  position: fixed;
+  min-height: 66px;
+  z-index: 600;
+  display: block;
+}
+
+header .row {
+  position: relative;
+  min-height: 66px;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+header .row {
+  position: relative;
+  min-height: 66px;
+}
+
+header .top-bar {
+  display: block;
+  background: var(--primary-color);
+  min-width: 220px;
+  min-height: 66px;
+  position: absolute;
+  left: 90px;
+  top: 0;
+}
+
+header .logo {
+  float: left;
+  margin-left: 80px;
+  margin-right: 50px;
+  margin-top: 25px;
+  position: inherit;
+}
+
+header .logo a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  width: 92px;
+  height: 15px;
+  background: url("../img/bonje.png") no-repeat center;
+  background-size: 92px 15px;
+}
+
+/**
+ * menu toggle - (_layout.css)
+ * ------------------------------------------------------------------- 
+ */
+.menu-toggle {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 13px;
+  display: block;
+  position: relative;
+}
+
+.menu-toggle span {
+  display: block;
+  background-color: var(--accent-color);
+  width: 24px;
+  height: 3px;
+  margin-top: -1.5px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  bottom: auto;
+  left: auto;
+  -moz-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  -webkit-transition: background 0.2s ease-in-out;
+  -ms-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+.menu-toggle span::before,
+.menu-toggle span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  -moz-transition-duration: 0.2s, 0.2s;
+  -o-transition-duration: 0.2s, 0.2s;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  -ms-transition-duration: 0.2s, 0.2s;
+  transition-duration: 0.2s, 0.2s;
+  -moz-transition-delay: 0.2s, 0s;
+  -o-transition-delay: 0.2s, 0s;
+  -webkit-transition-delay: 0.2s, 0s;
+  -ms-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
+}
+
+.menu-toggle span::before {
+  top: -8px;
+  -moz-transition-property: top, transform;
+  -o-transition-property: top, transform;
+  -webkit-transition-property: top, transform;
+  -ms-transition-property: top, transform;
+  transition-property: top, transform;
+}
+
+.menu-toggle span::after {
+  bottom: -8px;
+  -moz-transition-property: bottom, transform;
+  -o-transition-property: bottom, transform;
+  -webkit-transition-property: bottom, transform;
+  -ms-transition-property: bottom, transform;
+  transition-property: bottom, transform;
+}
+
+/* is clicked */
+.menu-toggle.is-clicked span {
+  background-color: var(--primary-color);
+}
+
+.menu-toggle.is-clicked span::before,
+.menu-toggle.is-clicked span::after {
+  background-color: var(--accent-color);
+  -moz-transition-delay: 0s, 0.2s;
+  -o-transition-delay: 0s, 0.2s;
+  -webkit-transition-delay: 0s, 0.2s;
+  -ms-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
+}
+
+.menu-toggle.is-clicked span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-toggle.is-clicked span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/**
+ * links - (_document-setup.scss)
+ * -------------------------------------------------------------------
+ */
+a,
+a:visited {
+  color: var(--nav-color);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--accent-color);
+  outline: 0;
+}
+
+/**
+ * links - (_basic.scss)
+ * ------------------------------------------------------------------- 
+ */
+a {
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  background: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* navigation panel */
+#main-nav-wrap {
+  display: block;
+  width: 100%;
+  font-family: var(--nav-font);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+nav {
+  display: block;
+}
+
+/* dropdown nav */
+.main-navigation {
+  background: var(--primary-color);
+  padding: 24px 30px 42px;
+  margin: 0;
+  height: auto;
+  clear: both;
+  display: none;
+}
+
+.main-navigation > li {
+  display: block;
+  height: auto;
+  text-align: left;
+  padding: 0;
+}
+
+.main-navigation li a {
+  display: block;
+  color: var(--nav-color);
+  width: auto;
+  padding: 15px 0;
+  line-height: 16px;
+  border: none;
+}
+
+.main-navigation li a:hover {
+  color: var(--accent-color);
+  padding-left: 1rem;
+}
+
+.main-navigation li.current > a {
+  background: none;
+  color: var(--accent-color);
+}
+
+ul {
+  margin-bottom: 3rem;
+}
+
+ul {
+  margin-left: 1.7rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding-left: 0.4rem;
+}
+
+li {
+  display: list-item;
+  /* block; */
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats i {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  width: 54px;
+  height: 54px;
+  font-size: 24px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.stats .stats-item {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.stats .stats-item span {
+  font-size: 36px;
+  display: block;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.stats .stats-item p {
+  padding: 0;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 25px 0;
+  position: relative;
+}
+
+.page-title h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li + li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details Section
+--------------------------------------------------------------*/
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* .ftco-animate {
+    opacity: 0;
+    visibility: hidden;
+} */
+
+.text-center {
+  text-align: center !important;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.ftco-animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.service-details .services-list {
+  padding: 10px 30px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  margin-bottom: 20px;
+}
+
+.service-details .services-list a {
+  display: block;
+  line-height: 1;
+  padding: 8px 0 8px 15px;
+  border-left: 3px solid
+    color-mix(in srgb, var(--default-color), transparent 70%);
+  margin: 20px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  transition: 0.3s;
+}
+
+.service-details .services-list a.active {
+  color: var(--heading-color);
+  font-weight: 700;
+  border-color: var(--accent-color);
+}
+
+.service-details .services-list a:hover {
+  border-color: var(--accent-color);
+}
+
+.service-details .services-img {
+  margin-bottom: 20px;
+}
+
+.service-details h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.service-details h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.service-details p {
+  font-size: 15px;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.service-details ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+/**
+ * small screens - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+@media screen and (max-width: 1024px) {
+  .row .row {
+    margin-left: -18px;
+    margin-right: -18px;
+  }
+
+  [class*="col-"] {
+    padding: 0 18px;
+  }
+}
+
+/**
+   * tablets - (_grid.scss)
+   * --------------------------------------------------------------- 
+   */
+@media screen and (max-width: 768px) {
+  .row {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .row .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  [class*="col-"] {
+    padding: 0 15px;
+  }
+
+  .tab-1-4 {
+    width: 25%;
+  }
+
+  .tab-1-3 {
+    width: 33.33333%;
+  }
+
+  .tab-1-2 {
+    width: 50%;
+  }
+
+  .tab-2-3 {
+    width: 66.66667%;
+  }
+
+  .tab-3-4 {
+    width: 75%;
+  }
+
+  .tab-full {
+    width: 100%;
+  }
+}
+
+/**
+   * large mobile devices - (_grid.scss)
+   * --------------------------------------------------------------- 
+   */
+@media screen and (max-width: 600px) {
+  .row {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .row .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  [class*="col-"] {
+    padding: 0 10px;
+  }
+
+  .mob-1-4 {
+    width: 25%;
+  }
+
+  .mob-1-2 {
+    width: 50%;
+  }
+
+  .mob-3-4 {
+    width: 75%;
+  }
+
+  .mob-full {
+    width: 100%;
+  }
+}
+
+/**
+   * small mobile devices - (_grid.scss)
+   * --------------------------------------------------------------- 
+   */
+@media screen and (max-width: 400px) {
+  .row .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  [class*="col-"] {
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  [class*="col-"] + [class*="col-"].end {
+    float: none;
+  }
+}
+
+/** 
+   * ===================================================================
+   * 03. grid - (_grid.scss)
+   *
+   * ------------------------------------------------------------------- 
+   */
+.row {
+  width: 94%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row .row {
+  width: auto;
+  max-width: none;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+   * responsive:
+   * header styles
+   * --------------------------------------------------------------- 
+   */
+@media only screen and (max-width: 1024px) {
+  header .top-bar {
+    left: 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .top-bar {
+    left: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header .top-bar {
+    left: 35px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .top-bar {
+    left: 25px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button.stroke,
+.button.stroke {
+  background: transparent !important;
+  border: 3px solid #313131;
+  line-height: 4.8rem;
+}
+
+.button-section .button {
+  width: 250px;
+}
+
+.button,
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  font-family: "poppins-bold", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  padding: 0 3rem;
+  margin: 0 0.3rem 1.2rem 0;
+  background: #d8d8d8;
+  color: #313131;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button.stroke,
+.button.stroke {
+  background: transparent !important;
+  border: 3px solid #313131;
+  line-height: 4.8rem;
+}
+
+.button.button-primary,
+a.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background: #313131;
+  color: #ffffff;
+}
+
+.button,
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  font-family: "poppins-bold", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  padding: 0 3rem;
+  margin: 0 0.3rem 1.2rem 0;
+  background: #d8d8d8;
+  color: #313131;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body,
+input,
+button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-weight: normal;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+}
+
+.col-twelve,
+.col-full {
+  width: 100%;
+}
