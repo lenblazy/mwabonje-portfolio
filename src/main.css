@@ -2,14 +2,14 @@
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
+  --heading-font: "Futura", "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
 
 :root {
   --background-color: #f9f8fb;
   --default-color: #272829;
-  --heading-color: #577bc1;
+  --heading-color: #000957;
   --primary-color: #000957;
   --accent-color: #ebe645;
   --surface-color: #f9f8fb;
@@ -28,7 +28,7 @@
 .light-background {
   --background-color: #f9f8fb;
   --default-color: #272829;
-  --heading-color: #577bc1;
+  --heading-color: #000210;
   --primary-color: #000957;
   --accent-color: #ebe645;
   --surface-color: #f9f8fb;
@@ -38,7 +38,7 @@
 .dark-background {
   --background-color: #f9f8fb;
   --default-color: #272829;
-  --heading-color: #577bc1;
+  --heading-color: #000957;
   --primary-color: #000957;
   --accent-color: #ebe645;
   --surface-color: #f9f8fb;
@@ -90,11 +90,11 @@ a {
   background: transparent;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 ul {
   margin-bottom: 3rem;
@@ -120,7 +120,6 @@ ul li {
 
 li {
   display: list-item;
-  /* block; */
 }
 
 /*--------------------------------------------------------------
@@ -229,17 +228,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  overflow: clip;
-}
-
-/*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
@@ -332,13 +320,6 @@ section,
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 /*--------------------------------------------------------------
@@ -558,18 +539,6 @@ section,
   max-width: none;
   margin-left: -20px;
   margin-right: -20px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 button.stroke,

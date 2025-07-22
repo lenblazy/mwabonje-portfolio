@@ -10,7 +10,7 @@ const Portfolio = () => (
       <SectionTitle
         title={"Portfolio"}
         content={
-          "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quosquisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+          "Explore my portfolio to see a collection of my work, including web and mobile applications that I have developed. Each project showcases my skills in software engineering, design, and problem-solving. From Fintech solutions to innovative web applications, my portfolio reflects my dedication to delivering high-quality software that meets user needs and business goals."
         }
       />
     </div>

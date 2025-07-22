@@ -5,7 +5,7 @@ const About = () => (
   <section id="about" className="about section">
     <SectionTitle
       title="About"
-      content="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+      content="Lennox is a seasoned Software Engineer with over 6 years of experience building scalable and secure mobile and web applications. He specializes in creating innovative solutions for Fintech industries."
     />
 
     <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -16,8 +16,7 @@ const About = () => (
         <div className="col-lg-8 content">
           <h2>Full-Stack Software Engineer</h2>
           <p className="fst-italic py-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Here's a record of my personal and professional details.
           </p>
           <div className="row">
             <div className="col-lg-6">
@@ -58,11 +57,9 @@ const About = () => (
             </div>
           </div>
           <p className="py-3">
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio
-            vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-            incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime
-            officiis quidem quia. Sed et consectetur qui quia repellendus itaque
-            neque.
+            Feel free to reach out to me for any inquiries or collaborations. I
+            am always open to new opportunities and challenges in the software
+            development field.
           </p>
         </div>
       </div>

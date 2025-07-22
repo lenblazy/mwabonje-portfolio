@@ -5,10 +5,14 @@ const Resume = () => (
     <div className="container section-title" data-aos="fade-up">
       <h2>Resume</h2>
       <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-        sit in iste officiis commodi quidem hic quas.
+        Here is a detailed overview of my professional journey, including my
+        work experience, education, and skills. This section highlights my
+        career milestones and achievements, showcasing my growth as a Full-Stack
+        Software Engineer. I have worked on various projects, honing my skills
+        in mobile and web application development, particularly in the Fintech
+        industry. My resume reflects my commitment to continuous learning and my
+        passion for creating innovative solutions that meet the needs of users
+        and businesses.
       </p>
     </div>
 
@@ -101,34 +105,12 @@ const Resume = () => (
             </div>
 
             <div className="timeline-header">
-              <h3>Master Degree</h3>
-              <p>July 2015 - Present</p>
-            </div>
-
-            <div className="timeline-content">
-              <h4>University of Life</h4>
-              <p>
-                Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
-                consectetur nisi cupidatat laboris esse eiusmod deserunt aute do
-                quis velit esse sed Ut proident cupidatat nulla esse cillum
-                laborum occaecat nostrud sit dolor incididunt amet est occaecat
-                nisi.
-              </p>
-            </div>
-          </div>
-
-          <div className="timeline-block">
-            <div className="timeline-ico">
-              <i className="fa fa-briefcase"></i>
-            </div>
-
-            <div className="timeline-header">
               <h3>Bachelor Degree</h3>
-              <p>July 2014 - June 2015</p>
+              <p>September 2014 - December 2018</p>
             </div>
 
             <div className="timeline-content">
-              <h4>State Design University</h4>
+              <h4>Masinde Muliro University Of Science And Technology</h4>
               <p>
                 Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
                 consectetur nisi cupidatat laboris esse eiusmod deserunt aute do
@@ -145,12 +127,12 @@ const Resume = () => (
             </div>
 
             <div className="timeline-header">
-              <h3>Bachelor Degree</h3>
-              <p>May 2013 - June 2014</p>
+              <h3>Kenya Certificate of Secondary Education</h3>
+              <p>Jan 2010 - December 2013</p>
             </div>
 
             <div className="timeline-content">
-              <h4>Design College</h4>
+              <h4>Allidina Visram High School</h4>
               <p>
                 Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna
                 consectetur nisi cupidatat laboris esse eiusmod deserunt aute do
