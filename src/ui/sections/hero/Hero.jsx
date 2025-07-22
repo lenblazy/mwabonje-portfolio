@@ -1,39 +1,20 @@
 import heroBgImg from "../../../assets/img/home-bg.jpg";
+
 import "./styles.css";
 import { socialLinks } from "../../../data/data";
+import SocialLinks from "../../components/social/SocialLinks";
 
 const Hero = () => (
-  <section id="home" className="hero section dark-background">
+  <section id="home" className="hero section light-background">
     <img src={heroBgImg} alt="Lennox" data-aos="fade-in" />
     <div className="container" data-aos="fade-up" data-aos-delay="100">
-      <h2>Lennox Mwabonje</h2>
-      <p>
-        I'm a{" "}
-        <span
-          className="typed"
-          data-typed-items="Designer, Developer, Freelancer, Photographer"
-        >
-          Designer
-        </span>
-        <span
-          className="typed-cursor typed-cursor--blink"
-          aria-hidden="true"
-        ></span>
-        <span
-          className="typed-cursor typed-cursor--blink"
-          aria-hidden="true"
-        ></span>
+      <h5>Hello, World.</h5>
+      <h1>I'm Lennox Mwabonje</h1>
+      <p class="intro-position">
+        <span>Full-Stack Software Engineer</span>
       </p>
-      <div className="social-links">
-        {socialLinks.map((link) => {
-          const { id, linkTo, image } = link;
-          return (
-            <a href={linkTo} key={id}>
-              <i className={`bi bi-${image}`}></i>
-            </a>
-          );
-        })}
-      </div>
+
+      <SocialLinks socialLinks={socialLinks} />
     </div>
   </section>
 );

@@ -5,8 +5,10 @@ const Skills = () => (
     <div className="container section-title" data-aos="fade-up">
       <h2>Skills</h2>
       <p>
-        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-        consectetur velit
+        Here's a list of my technical skills and proficiencies in various
+        programming languages, frameworks, and tools that I have mastered over
+        the years. Each skill is accompanied by a percentage indicating my level
+        of expertise.
       </p>
     </div>
 

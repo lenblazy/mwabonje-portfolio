@@ -2,232 +2,55 @@
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
+  --heading-font: "Futura", "Raleway", sans-serif;
   --nav-font: "Poppins", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff;
-  /* Background color for the entire website, including individual sections */
+  --background-color: #f9f8fb;
   --default-color: #272829;
-  /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #45505b;
-  /* Color for headings, subheadings and title throughout the website */
-  --primary-color: #344cb7;
-  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #000957;
+  --primary-color: #000957;
   --accent-color: #ebe645;
-  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff;
-  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff;
-  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --surface-color: #f9f8fb;
+  --contrast-color: #f9f8fb;
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #000000;
-  /* The default color of the main navmenu links */
-  --nav-hover-color: #000957;
-  /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff;
-  /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff;
-  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529;
-  /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #000957;
-  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #f9f8fb;
+  --nav-hover-color: #ebe645;
+  --nav-mobile-background-color: #000957;
+  --nav-dropdown-background-color: #000957;
+  --nav-dropdown-color: #000957;
+  --nav-dropdown-hover-color: #ebe645;
 }
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f9f9f9;
-  --surface-color: #ffffff;
+  --background-color: #f9f8fb;
+  --default-color: #272829;
+  --heading-color: #000210;
+  --primary-color: #000957;
+  --accent-color: #ebe645;
+  --surface-color: #f9f8fb;
+  --contrast-color: #f9f8fb;
 }
 
 .dark-background {
-  --background-color: #060606;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
+  --background-color: #f9f8fb;
+  --default-color: #272829;
+  --heading-color: #000957;
+  --primary-color: #000957;
+  --accent-color: #ebe645;
+  --surface-color: #f9f8fb;
+  --contrast-color: #f9f8fb;
 }
 
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
-
-body {
+/* body {
   margin: 0;
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-}
-
-/** 
- * ===================================================================
- * 09. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-header {
-  position: fixed;
-  min-height: 66px;
-  z-index: 600;
-  display: block;
-}
-
-header .row {
-  position: relative;
-  min-height: 66px;
-}
-
-div {
-  margin: 0;
-  padding: 0;
-}
-
-header .row {
-  position: relative;
-  min-height: 66px;
-}
-
-header .top-bar {
-  display: block;
-  background: var(--primary-color);
-  min-width: 220px;
-  min-height: 66px;
-  position: absolute;
-  left: 90px;
-  top: 0;
-}
-
-header .logo {
-  float: left;
-  margin-left: 80px;
-  margin-right: 50px;
-  margin-top: 25px;
-  position: inherit;
-}
-
-header .logo a {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  width: 92px;
-  height: 15px;
-  background: url("../img/bonje.png") no-repeat center;
-  background-size: 92px 15px;
-}
-
-/**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
-.menu-toggle {
-  float: left;
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 13px;
-  display: block;
-  position: relative;
-}
-
-.menu-toggle span {
-  display: block;
-  background-color: var(--accent-color);
-  width: 24px;
-  height: 3px;
-  margin-top: -1.5px;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  bottom: auto;
-  left: auto;
-  -moz-transition: background 0.2s ease-in-out;
-  -o-transition: background 0.2s ease-in-out;
-  -webkit-transition: background 0.2s ease-in-out;
-  -ms-transition: background 0.2s ease-in-out;
-  transition: background 0.2s ease-in-out;
-}
-
-.menu-toggle span::before,
-.menu-toggle span::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
-  position: absolute;
-  left: 0;
-  -moz-transition-duration: 0.2s, 0.2s;
-  -o-transition-duration: 0.2s, 0.2s;
-  -webkit-transition-duration: 0.2s, 0.2s;
-  -ms-transition-duration: 0.2s, 0.2s;
-  transition-duration: 0.2s, 0.2s;
-  -moz-transition-delay: 0.2s, 0s;
-  -o-transition-delay: 0.2s, 0s;
-  -webkit-transition-delay: 0.2s, 0s;
-  -ms-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s;
-}
-
-.menu-toggle span::before {
-  top: -8px;
-  -moz-transition-property: top, transform;
-  -o-transition-property: top, transform;
-  -webkit-transition-property: top, transform;
-  -ms-transition-property: top, transform;
-  transition-property: top, transform;
-}
-
-.menu-toggle span::after {
-  bottom: -8px;
-  -moz-transition-property: bottom, transform;
-  -o-transition-property: bottom, transform;
-  -webkit-transition-property: bottom, transform;
-  -ms-transition-property: bottom, transform;
-  transition-property: bottom, transform;
-}
-
-/* is clicked */
-.menu-toggle.is-clicked span {
-  background-color: var(--primary-color);
-}
-
-.menu-toggle.is-clicked span::before,
-.menu-toggle.is-clicked span::after {
-  background-color: var(--accent-color);
-  -moz-transition-delay: 0s, 0.2s;
-  -o-transition-delay: 0s, 0.2s;
-  -webkit-transition-delay: 0s, 0.2s;
-  -ms-transition-delay: 0s, 0.2s;
-  transition-delay: 0s, 0.2s;
-}
-
-.menu-toggle.is-clicked span::before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.menu-toggle.is-clicked span::after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
+} */
 
 /**
  * links - (_document-setup.scss)
@@ -267,61 +90,11 @@ a {
   background: transparent;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-/* navigation panel */
-#main-nav-wrap {
-  display: block;
-  width: 100%;
-  font-family: var(--nav-font);
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-
-nav {
-  display: block;
-}
-
-/* dropdown nav */
-.main-navigation {
-  background: var(--primary-color);
-  padding: 24px 30px 42px;
-  margin: 0;
-  height: auto;
-  clear: both;
-  display: none;
-}
-
-.main-navigation > li {
-  display: block;
-  height: auto;
-  text-align: left;
-  padding: 0;
-}
-
-.main-navigation li a {
-  display: block;
-  color: var(--nav-color);
-  width: auto;
-  padding: 15px 0;
-  line-height: 16px;
-  border: none;
-}
-
-.main-navigation li a:hover {
-  color: var(--accent-color);
-  padding-left: 1rem;
-}
-
-.main-navigation li.current > a {
-  background: none;
-  color: var(--accent-color);
-}
+} */
 
 ul {
   margin-bottom: 3rem;
@@ -347,7 +120,6 @@ ul li {
 
 li {
   display: list-item;
-  /* block; */
 }
 
 /*--------------------------------------------------------------
@@ -456,17 +228,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  overflow: clip;
-}
-
-/*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
@@ -559,13 +320,6 @@ section,
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 /*--------------------------------------------------------------
@@ -785,44 +539,6 @@ section,
   max-width: none;
   margin-left: -20px;
   margin-right: -20px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/**
-   * responsive:
-   * header styles
-   * --------------------------------------------------------------- 
-   */
-@media only screen and (max-width: 1024px) {
-  header .top-bar {
-    left: 60px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  header .top-bar {
-    left: 50px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  header .top-bar {
-    left: 35px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  header .top-bar {
-    left: 25px;
-  }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 button.stroke,

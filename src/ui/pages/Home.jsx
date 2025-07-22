@@ -11,19 +11,19 @@ import Contact from "../sections/contact/Contact";
 import Footer from "../components/footer/Footer";
 
 const Home = () => (
-  <div>
+  <>
     <Header />
     <Hero />
     <About />
     <Skills />
     <Resume />
-    <Portfolio />
-    <Testimonials />
-    <Services />
-    <Blog />
+    {/* <Portfolio /> */}
+    {/* <Testimonials /> */}
+    {/* <Services /> */}
+    {/* <Blog /> */}
     <Contact />
     <Footer />
-  </div>
+  </>
 );
 
 export default Home;
